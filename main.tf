@@ -8,8 +8,9 @@ provider "scaleway" {
 
 module "scaleway_server" {
   source = "./scaleway_server"
-  server_name = "blog"
-  server_type = "VC1S"
-  image_arch = "x86_64"
-  image_name = "Ubuntu Xenial"
+
+  server_name = "${var.server_name}"
+  server_type = "${var.server_type}"
+  image_arch = "${var.image_arch}"
+  image_name = "${var.image_name}"
 }
