@@ -8,7 +8,8 @@ provider "scaleway" {
 
 module "server_one" {
   source = "./scaleway_server"
-  #
+
+  #Configuration for instance
   server_name = "${var.server_name}"
   server_type = "${var.server_type}"
   image_arch = "${var.image_arch}"
