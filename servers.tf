@@ -1,5 +1,5 @@
 data "scaleway_image" "ubuntu" {
-  architecture = "arm"
+  architecture = "x86_64"
   name = "Ubuntu Xenial"
 }
 
