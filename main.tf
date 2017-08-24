@@ -6,9 +6,9 @@ provider "scaleway" {
   region = "${var.scaleway_region}"
 }
 
-module "scaleway_server" {
+module "server_one" {
   source = "./scaleway_server"
-
+  #
   server_name = "${var.server_name}"
   server_type = "${var.server_type}"
   image_arch = "${var.image_arch}"
